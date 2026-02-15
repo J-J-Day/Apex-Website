@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions for Businesses - APEX Grant Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .main-gradient-bg {
+            background: linear-gradient(to right, #E95420, #87245B);
+        }
+        .secondary-gradient-text {
+            background: linear-gradient(to right, #E95420, #5E2750);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .accent-color { color: #E95420; }
+        .dark-purple-text { color: #2c001e; }
+        .group:hover .group-hover\:block {
+            display: block;
+        }
+        .animate-marquee {
+            animation: marquee 25s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-100%); }
+        }
+        .group:hover .animate-marquee {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fas fa-chart-line text-3xl secondary-gradient-text"></i>
+                <div>
+                    <div class="text-2xl font-bold secondary-gradient-text leading-tight">APEX</div>
+                    <div class="text-[10px] font-semibold text-gray-500 tracking-widest -mt-1">GRANT SOLUTIONS</div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html#how-it-works" class="text-gray-600 hover:text-[#E95420]">How It Works</a>
+                <a href="index.html#pricing" class="text-gray-600 hover:text-[#E95420]">Pricing</a>
+                <div class="relative group">
+                    <button class="text-gray-600 hover:text-[#E95420] flex items-center">
+                        Solutions <i class="fas fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-48 z-50">
+                        <a href="solutions-businesses.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#E95420]">For Businesses</a>
+                        <a href="solutions-end-users.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#E95420]">For End Users</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 font-medium hover:text-[#E95420] hidden sm:block">Login</a>
+                <button class="main-gradient-bg text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition duration-300 shadow-md hover:shadow-lg">
+                    Request a Demo
+                </button>
+                 <button id="mobile-menu-button" class="md:hidden text-2xl text-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+             <a href="index.html#how-it-works" class="block py-2 text-gray-600 hover:text-[#E95420]">How It Works</a>
+            <a href="index.html#pricing" class="block py-2 text-gray-600 hover:text-[#E95420]">Pricing</a>
+            <a href="solutions-businesses.html" class="block py-2 text-gray-600 hover:text-[#E95420]">For Businesses</a>
+            <a href="solutions-end-users.html" class="block py-2 text-gray-600 hover:text-[#E95420]">For End Users</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-[#E95420]">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                    <!-- Left Column: Text Content -->
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold dark-purple-text leading-tight tracking-tight">
+                            Turn Grant Discovery Into Your Competitive Edge
+                        </h1>
+                        <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
+                           We monitor thousands of sources so your sales team can stop searching and start selling with funded solutions.
+                        </p>
+                        <div class="mt-10">
+                            <button class="main-gradient-bg text-white font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition duration-300 shadow-lg hover:shadow-xl text-lg">
+                                Request a Demo
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Visual Illustration -->
+                    <div class="relative mt-12 lg:mt-0">
+                        <div class="relative w-full max-w-lg mx-auto aspect-square">
+                           <svg width="100%" height="100%" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Background grid -->
+                                <g opacity="0.3">
+                                    <path d="M100 0 V 500" stroke="#E5E7EB" stroke-width="1"/>
+                                    <path d="M200 0 V 500" stroke="#E5E7EB" stroke-width="1"/>
+                                    <path d="M300 0 V 500" stroke="#E5E7EB" stroke-width="1"/>
+                                    <path d="M400 0 V 500" stroke="#E5E7EB" stroke-width="1"/>
+                                    <path d="M0 100 H 500" stroke="#E5E7EB" stroke-width="1"/>
+                                    <path d="M0 200 H 500" stroke="#E5E7EB" stroke-width="1"/>
+                                    <path d="M0 300 H 500" stroke="#E5E7EB" stroke-width="1"/>
+                                    <path d="M0 400 H 500" stroke="#E5E7EB" stroke-width="1"/>
+                                </g>
+                                
+                                <!-- Scattered data nodes -->
+                                <circle cx="350" cy="120" r="5" fill="#D1D5DB"/>
+                                <circle cx="420" cy="220" r="5" fill="#D1D5DB"/>
+                                <circle cx="380" cy="380" r="5" fill="#D1D5DB"/>
+                                <circle cx="290" cy="450" r="5" fill="#D1D5DB"/>
+                                <circle cx="150" cy="350" r="5" fill="#D1D5DB"/>
+                                <circle cx="80" cy="180" r="5" fill="#D1D5DB"/>
+
+                                <!-- Key Nodes -->
+                                <circle cx="50" cy="250" r="10" fill="#87245B"/> <!-- Start Node -->
+                                <circle cx="250" cy="250" r="20" fill="white" stroke="#87245B" stroke-width="3"/> <!-- AI Hub -->
+                                <path d="M245 245 l10 10 m-10 0 l10 -10" stroke="#87245B" stroke-width="2.5" stroke-linecap="round"/>
+                                
+                                <circle cx="450" cy="80" r="12" fill="#E95420" opacity="0"> <!-- Opportunity 1 -->
+                                    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" fill="freeze"/>
+                                </circle>
+                                <circle cx="460" cy="320" r="12" fill="#E95420" opacity="0"> <!-- Opportunity 2 -->
+                                     <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.2s" fill="freeze"/>
+                                </circle>
+                                 <circle cx="440" cy="450" r="12" fill="#E95420" opacity="0"> <!-- Opportunity 3 -->
+                                     <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.4s" fill="freeze"/>
+                                </circle>
+
+                                <!-- Animated connecting lines -->
+                                <path d="M60 250 H 230" stroke="#87245B" stroke-width="4" stroke-linecap="round">
+                                    <animate attributeName="stroke-dasharray" from="0, 170" to="170, 0" dur="1s" fill="freeze"/>
+                                </path>
+                                <path d="M270 250 C 350 250, 400 150, 450 92" stroke="#87245B" stroke-width="4" stroke-linecap="round" opacity="0">
+                                     <animate attributeName="stroke-dasharray" from="0, 300" to="300, 0" dur="1.5s" begin="0.8s" fill="freeze"/>
+                                     <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="0.8s" fill="freeze"/>
+                                </path>
+                                <path d="M270 250 C 350 250, 400 300, 460 310" stroke="#D1D5DB" stroke-width="2.5" stroke-dasharray="4 4" opacity="0">
+                                      <animate attributeName="stroke-dasharray" from="0, 300" to="300, 0" dur="1.5s" begin="1s" fill="freeze"/>
+                                      <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="1s" fill="freeze"/>
+                                </path>
+                                 <path d="M270 250 C 350 250, 400 400, 440 440" stroke="#D1D5DB" stroke-width="2.5" stroke-dasharray="4 4" opacity="0">
+                                      <animate attributeName="stroke-dasharray" from="0, 300" to="300, 0" dur="1.5s" begin="1.2s" fill="freeze"/>
+                                      <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="1.2s" fill="freeze"/>
+                                </path>
+                           </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Your New Sales Playbook Section -->
+        <section class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold dark-purple-text mb-4">Your New Sales Playbook</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">A simple, repeatable process to turn grant discovery into a powerful competitive advantage and more closed deals.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <!-- Step 1: Discover -->
+                    <div>
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="#F3F4F6"/>
+                                <path d="M25 30 H 55" stroke="#E95420" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M30 40 H 50" stroke="#E95420" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M35 50 H 45" stroke="#E95420" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 dark-purple-text">1. Discover the Perfect Match</h3>
+                        <p class="text-gray-600 leading-relaxed">Input your industry and services, and Apex instantly filters opportunities that match your exact profile. No noise, just highly relevant funding that aligns with what your clients need most.</p>
+                    </div>
+                    <!-- Step 2: Qualify -->
+                    <div>
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                           <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="#F3F4F6"/>
+                                <path d="M28 25 V 55 H 52 V 35 L 42 25 H 28 Z" stroke="#87245B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M42 25 V 35 H 52" stroke="#87245B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35 40 L 40 45 L 48 35" stroke="#E95420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 dark-purple-text">2. Qualify with AI Summaries</h3>
+                        <p class="text-gray-600 leading-relaxed">The moment a new grant is released, you get an instant alert with an AI-generated summary. In seconds, you can decide if it’s worth pursuing — no long reports, just actionable insights.</p>
+                    </div>
+                    <!-- Step 3: Engage -->
+                     <div>
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6">
+                           <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="#F3F4F6"/>
+                                <path d="M55 25 L 25 40 L 38 42 L 40 55 L 55 25 Z" stroke="#87245B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M38 42 L 50 30" stroke="#E95420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 dark-purple-text">3. Engage with a Funded Solution</h3>
+                        <p class="text-gray-600 leading-relaxed">Arrive with solutions, not just sales pitches. With real-time alerts and ready-to-use summaries, your outreach becomes more compelling, positioning you as a partner who brings value.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before vs After Section -->
+        <section class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold dark-purple-text mb-4">The Apex Difference</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12">From manual searching to automated opportunity.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                    <!-- Before Column -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 text-left">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-red-100 text-red-500 text-2xl mr-4 flex-shrink-0">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold dark-purple-text">Before Apex</h3>
+                        </div>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-folder-open text-gray-400 mt-1 mr-3"></i>
+                                <span>Dozens of portals, inconsistent formats & endless manual checks.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-clock text-gray-400 mt-1 mr-3"></i>
+                                <span>Opportunities found late, reducing your competitive window.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-person-running text-gray-400 mt-1 mr-3"></i>
+                                <span>Slow internal follow-up and delayed client outreach.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- After Column -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border-2 border-[#E95420] text-left">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-100 text-green-500 text-2xl mr-4 flex-shrink-0">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold dark-purple-text">With Apex</h3>
+                        </div>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-globe-americas text-green-500 mt-1 mr-3"></i>
+                                <span>24/7 monitoring across all relevant sources in one dashboard.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-bolt text-green-500 mt-1 mr-3"></i>
+                                <span>Instant alerts with AI-powered summaries for quick decision-making.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-paper-plane text-green-500 mt-1 mr-3"></i>
+                                <span>Ready-to-send outreach drafts to engage clients immediately.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI & Value Proposition Section -->
+        <section class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="bg-white rounded-2xl shadow-xl max-w-4xl mx-auto p-8 md:p-12 text-center border border-gray-200">
+                     <div class="text-5xl accent-color mb-6 inline-block">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <p class="text-2xl md:text-3xl font-bold dark-purple-text leading-snug">
+                        One successful grant match can cover years of Apex subscription. 
+                        <span class="secondary-gradient-text">It’s not a cost — it’s a growth tool.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+         <!-- Trusted By Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-lg font-semibold text-gray-500 uppercase tracking-widest mb-8">Powering Growth Across Industries</h2>
+                <div class="relative w-full overflow-hidden group">
+                    <div class="flex animate-marquee whitespace-nowrap">
+                        <div class="flex items-center justify-around flex-shrink-0 w-max space-x-16">
+                            <span class="text-gray-500 font-semibold text-lg">Energy</span><span class="text-gray-500 font-semibold text-lg">Healthcare</span><span class="text-gray-500 font-semibold text-lg">Construction</span><span class="text-gray-500 font-semibold text-lg">Technology</span><span class="text-gray-500 font-semibold text-lg">Public Sector</span>
+                        </div>
+                        <div class="flex items-center justify-around flex-shrink-0 w-max space-x-16" aria-hidden="true">
+                             <span class="text-gray-500 font-semibold text-lg">Energy</span><span class="text-gray-500 font-semibold text-lg">Healthcare</span><span class="text-gray-500 font-semibold text-lg">Construction</span><span class="text-gray-500 font-semibold text-lg">Technology</span><span class="text-gray-500 font-semibold text-lg">Public Sector</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 md:py-28">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold dark-purple-text mb-6">Ready to Give Your Business the Edge?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">See how Apex Grant Solutions can transform your sales process. Get started with a demo today.</p>
+                <button class="main-gradient-bg text-white font-semibold px-10 py-4 rounded-lg hover:opacity-90 transition duration-300 shadow-lg hover:shadow-xl text-lg">
+                    Request a Demo
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2c001e] text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">APEX Grant Solutions</h4>
+                    <p class="text-gray-400">Automated grant discovery to help you win more business.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#features" class="text-gray-300 hover:text-white">Features</a></li>
+                        <li class="mb-2"><a href="index.html#pricing" class="text-gray-300 hover:text-white">Pricing</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Request Demo</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                     <div class="flex space-x-4 text-2xl">
+                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                     </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                &copy; 2024 APEX Grant Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+

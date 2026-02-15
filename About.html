@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - APEX Grant Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .main-gradient-bg {
+            background: linear-gradient(to right, #E95420, #87245B);
+        }
+        .secondary-gradient-text {
+            background: linear-gradient(to right, #E95420, #5E2750);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark-purple-text { color: #2c001e; }
+        .solution-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-40 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fas fa-chart-line text-3xl secondary-gradient-text"></i>
+                <div>
+                    <div class="text-2xl font-bold secondary-gradient-text leading-tight">APEX</div>
+                    <div class="text-[10px] font-semibold text-gray-500 tracking-widest -mt-1">GRANT SOLUTIONS</div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html#how-it-works" class="text-gray-600 hover:text-[#E95420]">How It Works</a>
+                <a href="index.html#pricing" class="text-gray-600 hover:text-[#E95420]">Pricing</a>
+                <a href="solutions-businesses.html" class="text-gray-600 hover:text-[#E95420]">Solutions</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 font-medium hover:text-[#E95420] hidden sm:block">Login</a>
+                <button class="main-gradient-bg text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition duration-300 shadow-md hover:shadow-lg">
+                    Request a Demo
+                </button>
+                 <button id="mobile-menu-button" class="md:hidden text-2xl text-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+            <a href="index.html#how-it-works" class="block py-2 text-gray-600 hover:text-[#E95420]">How It Works</a>
+            <a href="index.html#pricing" class="block py-2 text-gray-600 hover:text-[#E95420]">Pricing</a>
+            <a href="solutions-businesses.html" class="block py-2 text-gray-600 hover:text-[#E95420]">Solutions</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-[#E95420]">Login</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold dark-purple-text leading-tight tracking-tight">
+                           Our Mission: Make Funding Accessible
+                        </h1>
+                        <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
+                           We believe businesses shouldn’t have to waste hours searching dozens of websites for the funding that could fuel their growth. We built Apex to change that.
+                        </p>
+                    </div>
+                    <div class="relative mt-12 lg:mt-0 flex justify-center">
+                       <div class="w-64 h-64 bg-gray-100 rounded-full flex items-center justify-center">
+                           <i class="fas fa-bullseye text-8xl secondary-gradient-text"></i>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="our-story" class="py-20 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center">
+                    <div class="text-5xl secondary-gradient-text mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold dark-purple-text mb-4">Built From First-Hand Experience</h2>
+                    <p class="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">
+                        "Time after time, we watched businesses miss out on vital grants — not because they weren’t eligible, but because the system was scattered. We built Apex to cut through that noise and deliver the right opportunities, straight to you."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Help Section -->
+        <section class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold dark-purple-text mb-4">Who We Empower</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12">From growing businesses to ambitious innovators, our platform is built to serve two key groups.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                    <a href="solutions-businesses.html" class="solution-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-left block">
+                        <div class="text-4xl mb-4">
+                             <span class="secondary-gradient-text"><i class="fas fa-briefcase"></i></span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 dark-purple-text">Businesses & Sales Teams</h3>
+                        <p class="text-gray-600 mb-6">For those who want to turn grant discovery into a powerful competitive advantage for their sales process.</p>
+                        <span class="font-semibold secondary-gradient-text group">
+                            Explore Business Solutions
+                            <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                        </span>
+                    </a>
+                    <a href="solutions-end-users.html" class="solution-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-left block">
+                        <div class="text-4xl mb-4">
+                           <span class="secondary-gradient-text"><i class="fas fa-bullseye-pointer"></i></span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 dark-purple-text">Organizations & Project Leaders</h3>
+                        <p class="text-gray-600 mb-6">For those looking to secure funding for their own projects, from infrastructure to technology and beyond.</p>
+                        <span class="font-semibold secondary-gradient-text group">
+                            Explore Funding Solutions
+                            <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section class="py-20 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold dark-purple-text mb-4">Our Core Values</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Everything we build is guided by three simple principles.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center max-w-6xl mx-auto">
+                    <div>
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6 bg-white rounded-full shadow-md">
+                            <i class="fas fa-bolt text-4xl secondary-gradient-text"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 dark-purple-text">Speed</h3>
+                        <p class="text-gray-600 leading-relaxed">Opportunity is fleeting. We deliver real-time alerts so you can act faster than the competition and never miss a deadline.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6 bg-white rounded-full shadow-md">
+                           <i class="fas fa-filter text-4xl secondary-gradient-text"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 dark-purple-text">Clarity</h3>
+                        <p class="text-gray-600 leading-relaxed">We cut through the bureaucratic noise. Our AI-powered summaries provide clear, actionable insights so you can make decisions in seconds.</p>
+                    </div>
+                     <div>
+                        <div class="flex items-center justify-center h-20 w-20 mx-auto mb-6 bg-white rounded-full shadow-md">
+                           <i class="fas fa-arrow-trend-up text-4xl secondary-gradient-text"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 dark-purple-text">Advantage</h3>
+                        <p class="text-gray-600 leading-relaxed">Our platform is more than a tool—it's a competitive edge that empowers you to win more business or fund your most ambitious projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold dark-purple-text mb-6">Ready to Get Started?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">See how Apex can help you achieve your goals. Explore our solutions or request a demo today.</p>
+                <button class="main-gradient-bg text-white font-semibold px-10 py-4 rounded-lg hover:opacity-90 transition duration-300 shadow-lg hover:shadow-xl text-lg">
+                    Request a Demo
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#2c001e] text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html">
+                        <h4 class="text-lg font-semibold mb-4 hover:text-gray-300">APEX Grant Solutions</h4>
+                    </a>
+                    <p class="text-gray-400">Automated grant discovery to fuel your growth.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul>
+                        <li class="mb-2"><a href="index.html#how-it-works" class="text-gray-300 hover:text-white">How It Works</a></li>
+                        <li class="mb-2"><a href="index.html#pricing" class="text-gray-300 hover:text-white">Pricing</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Request Demo</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                     <div class="flex space-x-4 text-2xl">
+                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                     </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                &copy; 2024 APEX Grant Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+

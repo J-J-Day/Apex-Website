@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Grant Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .main-gradient-bg {
+            background: linear-gradient(to right, #E95420, #87245B);
+        }
+        .secondary-gradient-text {
+            background: linear-gradient(to right, #E95420, #5E2750);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .accent-color { color: #E95420; }
+        .dark-purple-text { color: #2c001e; }
+        .pricing-card.popular {
+            border-color: #E95420;
+            transform: scale(1.05);
+        }
+        .group:hover .group-hover\:block {
+            display: block;
+        }
+        .animate-marquee {
+            animation: marquee 25s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-100%); }
+        }
+        .group:hover .animate-marquee {
+            animation-play-state: paused;
+        }
+        /* Tab styling */
+        .tab-button.active {
+            color: #E95420;
+            border-color: #E95420;
+        }
+        .solution-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-40 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fas fa-chart-line text-3xl secondary-gradient-text"></i>
+                <div>
+                    <div class="text-2xl font-bold secondary-gradient-text leading-tight">APEX</div>
+                    <div class="text-[10px] font-semibold text-gray-500 tracking-widest -mt-1">GRANT SOLUTIONS</div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#how-it-works" class="text-gray-600 hover:text-[#E95420]">How It Works</a>
+                <a href="#pricing" class="text-gray-600 hover:text-[#E95420]">Pricing</a>
+                <div class="relative group">
+                    <button class="text-gray-600 hover:text-[#E95420] flex items-center">
+                        Solutions <i class="fas fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-gray-50 border border-gray-200 shadow-lg rounded-md top-full pt-2 w-48 z-50">
+                        <a href="solutions-businesses.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#E95420]">For Businesses</a>
+                        <a href="solutions-end-users.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#E95420]">For End Users</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 font-medium hover:text-[#E95420] hidden sm:block">Login</a>
+                <button class="main-gradient-bg text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition duration-300 shadow-md hover:shadow-lg">
+                    Request a Demo
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-2xl text-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+            <a href="#how-it-works" class="block py-2 text-gray-600 hover:text-[#E95420]">How It Works</a>
+            <a href="#pricing" class="block py-2 text-gray-600 hover:text-[#E95420]">Pricing</a>
+            <a href="solutions-businesses.html" class="block py-2 text-gray-600 hover:text-[#E95420]">Solutions for Businesses</a>
+            <a href="solutions-end-users.html" class="block py-2 text-gray-600 hover:text-[#E95420]">Solutions for End Users</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-[#E95420]">Login</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold dark-purple-text leading-tight tracking-tight">
+                            Find Grants That Fund Your Growth — Instantly
+                        </h1>
+                        <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
+                            Our AI scans thousands of sources 24/7, delivering tailored grant alerts directly to you. Stop searching, start winning.
+                        </p>
+                        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <button class="w-full sm:w-auto main-gradient-bg text-white font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition duration-300 shadow-lg hover:shadow-xl text-lg">
+                                Request a Demo
+                            </button>
+                            <a href="#" id="open-example-modal" class="w-full sm:w-auto text-gray-600 hover:text-[#E95420] font-medium">
+                                See Example Alert <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative mt-12 lg:mt-0">
+                        <div class="bg-white p-6 rounded-2xl shadow-2xl border border-gray-300 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                           <div class="bg-white rounded-lg p-4 text-left w-full">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-10 h-10 flex items-center justify-center rounded-full main-gradient-bg text-white text-lg mr-4">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <h3 class="font-bold text-lg text-gray-800">New Grant Found</h3>
+                                </div>
+                                <p class="text-sm text-gray-500 ml-14 -mt-2">Industry Match: <span class="font-semibold text-gray-800">Local Council, Heating</span></p>
+                                <div class="mt-5 border-t pt-4 grid grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wider">Funding Amount</p>
+                                        <p class="text-2xl font-bold accent-color">£250,000</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wider">Deadline</p>
+                                        <p class="text-2xl font-bold dark-purple-text">30 Sept</p>
+                                    </div>
+                                    <div class="col-span-2">
+                                        <p class="text-xs text-gray-500 uppercase font-semibold tracking-wider">Source</p>
+                                        <p class="text-lg font-semibold dark-purple-text">Innovate UK</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4 border-t pt-3">
+                                    <a href="#" class="group inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+                                        Click to request opportunity summary
+                                        <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-orange-100 rounded-full opacity-50 -z-10"></div>
+                        <div class="absolute -bottom-12 -right-12 w-40 h-40 bg-purple-100 rounded-full opacity-50 -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Segmentation Section -->
+        <section id="solutions" class="py-20 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold dark-purple-text mb-4">Find the Right Solution for You</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12">Whether you're selling to clients or funding your own projects, Apex has you covered.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                    <!-- For Businesses Card -->
+                    <a href="solutions-businesses.html" class="solution-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-left block">
+                        <div class="text-4xl mb-4">
+                             <span class="secondary-gradient-text"><i class="fas fa-briefcase"></i></span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 dark-purple-text">For Businesses & Sales Teams</h3>
+                        <p class="text-gray-600 mb-6">Turn grant discovery into a competitive advantage and a powerful tool for your sales team.</p>
+                        <span class="font-semibold secondary-gradient-text group">
+                            Explore Business Solutions
+                            <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                        </span>
+                    </a>
+                    <!-- For End Users Card -->
+                    <a href="solutions-end-users.html" class="solution-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-left block">
+                        <div class="text-4xl mb-4">
+                           <span class="secondary-gradient-text"><i class="fas fa-bullseye-pointer"></i></span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 dark-purple-text">For Your Own Projects</h3>
+                        <p class="text-gray-600 mb-6">Find the funding you need to make your next big project a reality, from infrastructure to technology.</p>
+                        <span class="font-semibold secondary-gradient-text group">
+                            Explore Funding Solutions
+                            <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold dark-purple-text mb-16">A Simple Path to Opportunity</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center md:items-start space-y-12 md:space-y-0 md:space-x-12">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative flex items-center justify-center w-24 h-24 rounded-full main-gradient-bg text-white text-4xl font-bold mb-6 shadow-lg">1</div>
+                        <h3 class="text-2xl font-semibold mb-3">Define Your Focus</h3>
+                        <p class="text-gray-600 max-w-sm leading-7">Set up your profile with keywords relevant to your industry and services.</p>
+                    </div>
+                    <div class="hidden md:flex items-center h-full pt-12">
+                         <i class="fas fa-long-arrow-alt-right text-4xl text-gray-300 mx-8"></i>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                         <div class="relative flex items-center justify-center w-24 h-24 rounded-full main-gradient-bg text-white text-4xl font-bold mb-6 shadow-lg">2</div>
+                        <h3 class="text-2xl font-semibold mb-3">Receive AI-Powered Alerts</h3>
+                        <p class="text-gray-600 max-w-sm leading-7">Get real-time email notifications with clear summaries the moment a grant is published.</p>
+                    </div>
+                    <div class="hidden md:flex items-center h-full pt-12">
+                        <i class="fas fa-long-arrow-alt-right text-4xl text-gray-300 mx-8"></i>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                         <div class="relative flex items-center justify-center w-24 h-24 rounded-full main-gradient-bg text-white text-4xl font-bold mb-6 shadow-lg">3</div>
+                        <h3 class="text-2xl font-semibold mb-3">Take Action</h3>
+                        <p class="text-gray-600 max-w-sm leading-7">Use the insights to apply directly or to engage clients with a funded solution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Sources Section -->
+        <section id="data-sources" class="py-20 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold dark-purple-text mb-4">Technology You Can Trust</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">Our AI continuously monitors thousands of verified sources across the UK, so you get comprehensive, reliable, and up-to-date information.</p>
+                <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 text-gray-600 font-semibold">
+                    <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Gov.uk Portals</span>
+                    <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Innovate UK</span>
+                    <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Local Council Websites</span>
+                    <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Major News Outlets</span>
+                    <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Official Publications</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Mission Section -->
+        <section id="our-mission" class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center">
+                    <div class="text-5xl secondary-gradient-text mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
+                        We know the pain first-hand. Time after time, we watched businesses miss out on vital grants — not because they weren’t eligible, but because the system was scattered across too many portals. We built Apex to cut through that noise and deliver the right opportunities, straight to you.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold dark-purple-text mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-16">Choose the plan that's right for your business. No hidden fees.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                    <div class="pricing-card bg-white border-2 border-dashed border-gray-300 rounded-xl p-8 text-left flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Free Trial</h3>
+                        <p class="text-gray-500 mb-6">Explore the platform</p>
+                        <p class="text-5xl font-bold mb-6">£0<span class="text-lg font-medium text-gray-500">/ 7 days</span></p>
+                        <ul class="text-left space-y-4 mb-8 flex-grow"><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>1 Monitored Keyword</li><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>Real-time Email Alerts</li></ul>
+                        <button class="w-full main-gradient-bg text-white font-bold py-3 rounded-lg hover:opacity-90">Try 1-week free trial</button>
+                    </div>
+                    <div class="pricing-card bg-white border-2 border-gray-200 rounded-xl p-8 text-left flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Starter</h3>
+                        <p class="text-gray-500 mb-6">For individuals</p>
+                        <p class="text-5xl font-bold mb-6">**<span class="text-lg font-medium text-gray-500">/mo</span></p>
+                        <ul class="text-left space-y-4 mb-8 flex-grow"><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>5 Monitored Keywords</li><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>Real-time Email Alerts</li><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>Standard Support</li></ul>
+                        <button class="w-full bg-gray-200 text-gray-800 font-bold py-3 rounded-lg hover:bg-gray-300">Choose Plan</button>
+                    </div>
+                    <div class="pricing-card popular bg-white relative border-2 rounded-xl p-8 text-left flex flex-col">
+                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 accent-bg text-white px-4 py-1 text-sm font-bold rounded-full" style="background-color: #E95420;">POPULAR</span>
+                        <h3 class="text-2xl font-semibold mb-2">Professional</h3>
+                        <p class="text-gray-500 mb-6">For growing teams</p>
+                        <p class="text-5xl font-bold mb-6">**<span class="text-lg font-medium text-gray-500">/mo</span></p>
+                        <ul class="text-left space-y-4 mb-8 flex-grow"><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>50 Keywords</li><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>Real-time Alerts</li><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>Priority Support</li><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>API Access</li></ul>
+                        <button class="w-full main-gradient-bg text-white font-bold py-3 rounded-lg hover:opacity-90">Choose Plan</button>
+                    </div>
+                    <div class="pricing-card bg-white border-2 border-gray-200 rounded-xl p-8 text-left flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-2">Enterprise</h3>
+                        <p class="text-gray-500 mb-6">For organizations</p>
+                        <p class="text-4xl font-bold mb-6">**</p>
+                        <ul class="text-left space-y-4 mb-8 flex-grow"><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>Unlimited Keywords</li><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>Team Accounts</li><li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i>Dedicated Manager</li></ul>
+                        <button class="w-full bg-gray-200 text-gray-800 font-bold py-3 rounded-lg hover:bg-gray-300">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#2c001e] text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">APEX Grant Solutions</h4>
+                    <p class="text-gray-400">Automated grant discovery to help you win more business.</p>
+                </div>
+                <div><h4 class="text-lg font-semibold mb-4">Product</h4><ul><li class="mb-2"><a href="#features" class="text-gray-300 hover:text-white">Features</a></li><li class="mb-2"><a href="#pricing" class="text-gray-300 hover:text-white">Pricing</a></li><li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Request Demo</a></li></ul></div>
+                <div><h4 class="text-lg font-semibold mb-4">Company</h4><ul><li class="mb-2"><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li><li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Contact</a></li><li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li></ul></div>
+                <div><h4 class="text-lg font-semibold mb-4">Connect</h4><div class="flex space-x-4 text-2xl"><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a></div></div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">&copy; 2024 APEX Grant Solutions. All rights reserved.</div>
+        </div>
+    </footer>
+    
+    <!-- Example Alerts Modal -->
+    <div id="example-alerts-modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50 p-4">
+        <div class="bg-white rounded-xl p-8 max-w-4xl w-full shadow-2xl transform transition-all duration-300 opacity-0 scale-95">
+            <div class="flex justify-between items-center mb-2">
+                <h3 class="text-2xl font-bold dark-purple-text">Example Apex Alerts</h3>
+                <button id="close-example-modal" class="text-gray-500 text-3xl hover:text-gray-800">&times;</button>
+            </div>
+            <p class="text-gray-600 mb-6">Here’s how Apex delivers instant, tailored notifications for your business.</p>
+
+            <!-- Tabs -->
+            <div class="border-b border-gray-200">
+                <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                    <button class="tab-button active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="healthcare">
+                        Healthcare
+                    </button>
+                    <button class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="technology">
+                        Technology
+                    </button>
+                    <button class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="construction">
+                        Construction
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="py-6">
+                <!-- Healthcare Tab -->
+                <div class="tab-pane active" id="healthcare">
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full main-gradient-bg text-white text-xl mr-4"><i class="fas fa-bell"></i></div>
+                            <div>
+                                <h4 class="text-lg font-bold dark-purple-text">New Grant Found: NHS Net Zero Programme</h4>
+                                <p class="text-sm text-gray-500">Industry Match: <span class="font-semibold text-blue-600">Healthcare, Energy Efficiency</span></p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6">Supports healthcare facilities in cutting emissions through energy efficiency upgrades and clean energy projects.</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center md:text-left">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Funding</p><p class="font-bold text-lg accent-color">£500,000</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Deadline</p><p class="font-bold text-lg dark-purple-text">14 Oct 2025</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Source</p><p class="font-bold text-lg dark-purple-text">NHS England</p></div>
+                        </div>
+                        <div class="mt-6 border-t border-gray-200 pt-4">
+                            <button class="w-full text-center bg-white border border-[#E95420] text-[#E95420] font-semibold py-2 rounded-lg hover:bg-orange-50 transition duration-300">
+                                Request summary of report
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Technology Tab -->
+                <div class="tab-pane hidden" id="technology">
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                         <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full main-gradient-bg text-white text-xl mr-4"><i class="fas fa-bell"></i></div>
+                            <div>
+                                <h4 class="text-lg font-bold dark-purple-text">New Grant Found: Innovate UK Smart Grants</h4>
+                                <p class="text-sm text-gray-500">Industry Match: <span class="font-semibold text-blue-600">AI & Digital Innovation</span></p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6">Funding for game-changing, commercially viable R&D projects that boost UK tech leadership.</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center md:text-left">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Funding</p><p class="font-bold text-lg accent-color">Up to £2 million</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Deadline</p><p class="font-bold text-lg dark-purple-text">30 Nov 2025</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Source</p><p class="font-bold text-lg dark-purple-text">Innovate UK</p></div>
+                        </div>
+                        <div class="mt-6 border-t border-gray-200 pt-4">
+                            <button class="w-full text-center bg-white border border-[#E95420] text-[#E95420] font-semibold py-2 rounded-lg hover:bg-orange-50 transition duration-300">
+                                Request summary of report
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Construction Tab -->
+                <div class="tab-pane hidden" id="construction">
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full main-gradient-bg text-white text-xl mr-4"><i class="fas fa-bell"></i></div>
+                            <div>
+                                <h4 class="text-lg font-bold dark-purple-text">New Grant Found: Levelling Up Fund</h4>
+                                <p class="text-sm text-gray-500">Industry Match: <span class="font-semibold text-blue-600">Local Authority, Construction</span></p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-6">Supports local authority construction projects that improve sustainability and reduce carbon footprints.</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center md:text-left">
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Funding</p><p class="font-bold text-lg accent-color">£150,000</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Deadline</p><p class="font-bold text-lg dark-purple-text">05 Dec 2025</p></div>
+                            <div><p class="text-xs text-gray-500 uppercase font-semibold">Source</p><p class="font-bold text-lg dark-purple-text">UK Government</p></div>
+                        </div>
+                        <div class="mt-6 border-t border-gray-200 pt-4">
+                            <button class="w-full text-center bg-white border border-[#E95420] text-[#E95420] font-semibold py-2 rounded-lg hover:bg-orange-50 transition duration-300">
+                                Request summary of report
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-xs text-gray-500 mt-4 text-center">This is an example. Actual notifications are tailored to your business profile.</p>
+            <div class="mt-6">
+                <button class="w-full sm:w-auto mx-auto flex items-center justify-center main-gradient-bg text-white font-bold py-3 px-8 rounded-lg hover:opacity-90 transition duration-300">Request a Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Example Alerts Modal
+        const openModalButton = document.getElementById('open-example-modal');
+        const closeModalButton = document.getElementById('close-example-modal');
+        const exampleModal = document.getElementById('example-alerts-modal');
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        function openTheModal() {
+            if (exampleModal) {
+                exampleModal.classList.remove('hidden');
+                setTimeout(() => {
+                    exampleModal.querySelector('div').classList.remove('opacity-0', 'scale-95');
+                }, 10);
+            }
+        }
+        
+        function closeTheModal() {
+            if (exampleModal) {
+                exampleModal.querySelector('div').classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    exampleModal.classList.add('hidden');
+                }, 300);
+            }
+        };
+        
+        if (openModalButton) {
+            openModalButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                openTheModal();
+            });
+        }
+        if (closeModalButton) {
+            closeModalButton.addEventListener('click', closeTheModal);
+        }
+        if (exampleModal) {
+            exampleModal.addEventListener('click', (e) => {
+                if (e.target === exampleModal) {
+                    closeTheModal();
+                }
+            });
+        }
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Deactivate all tabs
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.add('hidden'));
+                
+                // Activate clicked tab
+                button.classList.add('active');
+                const tabId = button.dataset.tab;
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
